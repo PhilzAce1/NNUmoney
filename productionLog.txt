@@ -1,0 +1,17 @@
+What has been done ... 
+Login 
+Navigate link page
+getLInks
+OpenlInk => comment on each post in each link 5 times 
+
+what is remaining 
+setUp Db ...
+save Login credentials 
+iterate through login details 
+
+
+Features =>
+Share Link +> will take 4 parameters ... 
+??
+dataBase Structure ... will contain 4 fields ... 
+(i.e NNU credentials and facebook credentials)

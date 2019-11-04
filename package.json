@@ -1,0 +1,21 @@
+{
+  "name": "nnu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "dev": "nodemon -r esm app.js --ignore *.json",
+    "start": "node -r esm app.js ",
+    "user": "node -r esm addUser.js"
+  },
+  "dependencies": {
+    "esm": "^3.2.25",
+    "lowdb": "^1.0.0",
+    "node-cron": "^2.0.3",
+    "puppeteer": "^2.0.0"
+  },
+  "devDependencies": {}
+}
