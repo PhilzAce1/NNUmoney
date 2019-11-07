@@ -13,7 +13,7 @@ const go = async () => {
   for (let user of users) {  
       await login(`${user.username}`, `${user.password}`)
   
-    }
+    } 
    } catch (error) {
     console.error('Login Failed \n\n', error)   
     process.exit(1)
