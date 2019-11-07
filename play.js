@@ -1,7 +1,22 @@
-const getUserAgent = () => {
-    const headers = [{'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}, {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'}, {'User-Agent': 'Opera/9.80 (Macintosh; Intel Mac OS X 10.14.1) Presto/2.12.388 Version/12.16'}, {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A'}, {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/51.0.2704.79 Safari/537.36 Edge/14.14931'}, {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; WOW64; rv:63.0) Gecko/20100101 Firefox/63.0'}, {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:10.0) Gecko/20100101 Firefox/62.0'}, {'User-Agent': 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.13; ko; rv:1.9.1b2) Gecko/20081201 Firefox/60.0'}, {'User-Agent': 'Chrome (AppleWebKit/537.1; Chrome50.0; Windows NT 6.3) AppleWebKit/537.36 (KHTML like Gecko) Chrome/51.0.2704.79 Safari/537.36 Edge/14.14393'}, {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; AS; rv:11.0) like Gecko'}]
-    let x =Math.round(Math.random() * (10 - 0) )
-  return  (JSON.stringify(headers[x]).replace(/{|}|'User-Agent'/gi, ""))
-  }
-  
-  console.log(getUserAgent())
+// import {sharePost} from './lib/sharePost';
+
+// const go = async() => {
+//   try {
+//     await sharePost()
+//   } catch (error) {
+//     console.log(error)
+//   }
+// }
+
+// go()
+
+// console.log((isPalindrome = (word) => (((word.split('').reverse().join('').toLowerCase()) === (word.toLowerCase())))
+// )('wow'))
+
+// const dummy = () => {let feeback ="Naza is a girl" ; return feeback}
+// console.log(dummy())
+const genericFunction = () => {
+  let languages = ['Python', 'JavaScript', 'Java', 'C#', 'C++']; //declare an array of elements
+  let [firstLang, secondLang, ...otherLanguages] = languages; //otherLanguages will be equal to ['Java', 'C#', 'C++'] 
+  return `First language is ${firstLang} and the second is ${secondLang}. The rest are ${otherLanguages}`}
+console.log(genericFunction());
