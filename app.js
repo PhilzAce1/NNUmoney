@@ -1,8 +1,8 @@
 require('dotenv').config()
 import {login, getBal} from './lib/login';
-// import cron from 'node-cron'
-// import express from 'express';
-// const app =express()
+import cron from 'node-cron'
+import express from 'express';
+const app =express()
 
 // import {sharePos t} from './lib/sharePost';
 import db from './lib/db'
@@ -32,18 +32,19 @@ const goShare= async () => {
     }
 }
 
-// app.get("/",async (req, res) => {
-//   console.log('scrapping')
-// try {
-//   // res.send('working');
-//    await go()
-//    res.redirect('/done');
-// } catch (error) {
-//   res.status(400).json({
-//     message:error
-//   }).send('did not work oooo ... ');
-// }
-// });
+app.get("/",async (req, res) => {
+  console.log('scrapping')
+try {
+  // res.send('working');
+   await go()
+  //  res.redirect('/done');
+  res.send('something')
+} catch (error) {
+  res.status(400).json({
+    message:error
+  }).send('did not work oooo ... ');
+}
+});
 
 // app.post("/user", async(req, res) => {
 //   const username = req.body.username
@@ -74,11 +75,11 @@ const goShare= async () => {
 //   res.send(bal);
 // });
 
-// app.get("/done", (req, res) => {
-//   res.send('working ooo ')
-// });
-// const port = process.env.PORT || 5000;
+app.get("/done", (req, res) => {
+  res.send('working ooo ')
+});
+const port = process.env.PORT || 5000;
 
-// app.listen(port, () => console.log(`Server running on port ${port} 🔥`));
+app.listen(port, () => console.log(`Server running on port ${port} 🔥`));
  
-go()
+// go()
